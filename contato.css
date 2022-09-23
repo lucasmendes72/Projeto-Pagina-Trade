@@ -1,0 +1,155 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: linear-gradient(90deg, #4B0082, #8B008B, #BA55D3);
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+}
+
+h1 {
+	margin: 0 50px;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	font-size: 30px;
+	margin-top: 0px; 
+}
+
+nav a:hover {
+	color: #FFE4E1;
+	text-decoration: underline;
+}
+
+.titulo-negociacao {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 30px 0 0 0;
+	color: #DB7093	;
+}
+
+main {
+	width: 940px;
+	margin: 0 40px;
+}
+
+form {
+	margin: 40px auto;
+}
+
+form label, form legend {
+	display: block;
+	margin: 0 0 10px;
+	font-size: 20px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 50%;
+	background: #8B008B;
+	border: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	transition: 1s background;
+}
+
+.enviar:hover {
+	font-size: 21px;
+	background: #C71585;
+	transform: scale(1.05);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+table:hover {
+	transform: scale(1.2);
+}
+
+thead {
+	background: #C71585;
+	color: white;
+}
+
+thead:hover {
+	color: black;
+}
+
+td {
+	border: 1px solid #CCCCCC;
+}
+
+td:hover {
+	background: #1C1C1C;
+	color: white;
+}
+
+td, th {
+	padding: 8px 15px;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	background: linear-gradient(90deg, #4B0082, #8B008B, #BA55D3);
+	margin: 40px 0px 0px 0px;
+}
+
+#texto-copyright {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Modificações Responsivas Página Contato */
+
+@media screen and (max-device-width: 480px) {
+	.caixa, main, form {
+		width: auto;
+	}
+
+	nav {
+		position: static;
+	}
+
+	nav a {
+		font-size: 25px;
+	}
+
+	.titulo-negociacao {
+		text-align: left;
+	}
+
+	form input-padrao {
+		margin-top: 15px;
+	}
+}

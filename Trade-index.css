@@ -1,0 +1,134 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: linear-gradient(90deg, #4B0082, #8B008B, #BA55D3);
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+}
+
+h1 {
+	margin: 0 50px;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0px;
+}
+
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	font-size: 30px;
+	margin-top: 0px; 
+}
+
+nav a:hover {
+	color: #FFE4E1;
+	text-decoration: underline;
+}
+
+.titulo-explicativo {
+	padding: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+p {
+	font-family: "Montserrat";
+	color: #4b4b4b;
+	font-size: 20px;
+	line-height: 34px;
+	max-width: 780px;
+	margin-left: 50px;
+	padding: 30px;
+
+}
+
+.ferramentas li {
+	display: inline-block;
+	width: 30%;
+	padding: 30px;
+	box-sizing: border-box;
+	margin: 20px;
+	text-align: center;
+	vertical-align: top;
+}
+
+ul h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	text-shadow: 5px 5px 5px grey;
+}
+
+.fotos-ferramentas {
+	width: 310px;
+	height: 550px;
+}
+
+.ferramentas img {
+	box-shadow: 10px 10px 10px black;
+}
+
+.ferramentas img:hover {
+	transform: scale(1.05);
+}
+
+.como-ajudamos {
+	padding: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.como-ajudamos em {
+	font-size: 32px;
+	color: purple;
+}
+
+footer {
+	text-align: center;
+	background: linear-gradient(90deg, #4B0082, #8B008B, #BA55D3);
+	margin: 40px 0 0 0;
+}
+
+#texto-copyright {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 0 19%;
+}
+
+/* Modificações Responsivas Página Home - Index */
+
+@media screen and (max-device-width: 480px) {
+	.caixa, .ferramentas li  {
+		width: auto;
+	}
+
+	nav {
+		position: static;
+	}
+
+	nav a {
+		font-size: 25px;
+	}
+
+	.ferramentas li {
+		display: block;
+		padding: 0;
+	}
+
+	ul h3 {
+		padding: 20px;
+	}
+}
