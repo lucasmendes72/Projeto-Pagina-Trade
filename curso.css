@@ -224,5 +224,9 @@ footer {
 
 	.venda-curso {
 		margin: 30px 30px;
+	} 
+
+	.card {
+		margin: 0 auto;
 	}
 }
